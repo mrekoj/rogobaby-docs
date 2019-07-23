@@ -1,2 +1,11 @@
 site_name: RogoBaby Docs
 theme: readthedocs
+nav:
+- Home : 'index.md'
+- Use case : 'RogoBaby Functions.md'
+- API Reference:
+  - 'Websocket API' : 'Stream.md'
+  - 'SpeakRecognize Interface': 'API Reference/SpeakRecognize Interface.md'  
+  - 'SpeechSynthesizer Interface': 'API Reference/SpeechSynthesizer Interface.md'
+  - 'AudioPlayer Interface': 'API Reference/AudioPlayer Interface.md'
+  - 'PlaybackController Interface': 'API Reference/PlaybackController Interface.md'

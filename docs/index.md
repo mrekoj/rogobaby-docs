@@ -1,7 +1,4 @@
-# RogoBaby Docs
-Documents for RogoBaby cloud
-
-## Overview
+# Overview
 
 We provide 3 interfaces for the client to interact with our cloud.
 
