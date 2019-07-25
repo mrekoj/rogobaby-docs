@@ -9,3 +9,5 @@ nav:
   - 'SpeechSynthesizer Interface': 'API Reference/SpeechSynthesizer Interface.md'
   - 'AudioPlayer Interface': 'API Reference/AudioPlayer Interface.md'
   - 'PlaybackController Interface': 'API Reference/PlaybackController Interface.md'
+  - 'Alert Interface': 'API Reference/Alert Interface.md'
+  - 'Notification Interface': 'API Reference/Notification Interface.md'
