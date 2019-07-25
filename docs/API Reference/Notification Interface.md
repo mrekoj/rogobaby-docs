@@ -65,10 +65,8 @@ Send notification from app to the device.
 
 **Header**
 ```json
-{
     "Authorization": "Bearer {{AccessToken}}",
     "content-type": "multipart/form-data"
-}
 ```
 
 **Data constraints**
@@ -115,10 +113,8 @@ Send notification from app to the device.
 
 **Header**
 ```json
-{
     "Authorization": "Bearer {{AccessToken}}",
     "content-type": "multipart/form-data"
-}
 ```
 **URL Params**: `device_id_receive=[integer]`
 
