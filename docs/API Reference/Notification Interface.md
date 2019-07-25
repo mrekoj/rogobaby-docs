@@ -9,11 +9,9 @@ Send notification from device to all app which this device belongs to.
 **Auth required** : YES
 
 **Header**
-```json
-{
+```
     "Authorization": "Bearer {{AccessToken}}",
-    "content-type": "multipart/form-data"
-}
+    "Content-type": "multipart/form-data"
 ```
 
 **Data constraints**
@@ -107,7 +105,7 @@ Send notification from app to the device.
     "user_id": 14
 }
 ```
-## Api read newest notification:
+## Api read newest notification
 
 **URL** : `https://api.fpt.io/notification/api/v1/notification/read`
 
