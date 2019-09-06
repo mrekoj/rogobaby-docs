@@ -26,28 +26,34 @@ Send notification from device to all app which this device belongs to.
 **Success Response**
 ```json
 {
-    "assets": {
-        "url": "{{string}}"
-    },
-    "created": "{{datetime}}",
-    "device_id_receive": "{{int}}",
-    "device_id_send": "{{int}}",
-    "id": "{{int}}",
-    "user_id": "{{int}}"
+    "ok": true,
+    "data": {
+        "assets": {
+            "url": "{{string}}"
+        },
+        "created": "{{datetime}}",
+        "device_id_receive": "{{int}}",
+        "device_id_send": "{{int}}",
+        "id": "{{int}}",
+        "user_id": "{{int}}"
+    }
 }
 ```
 
 **Sample Success Response**
 ```json
 {
-    "assets": {
-        "url": "https://s3.amazonaws.com/rogo-speaker/2644345.mp3-787881af"
-    },
-    "created": "Thu, 25 Jul 2019 04:07:39 GMT",
-    "device_id_receive": null,
-    "device_id_send": 1,
-    "id": 8,
-    "user_id": 14
+    "ok": true,
+    "data": {
+        "assets": {
+            "url": "https://s3.amazonaws.com/rogo-speaker/2644345.mp3-787881af"
+        },
+        "created": "Thu, 25 Jul 2019 04:07:39 GMT",
+        "device_id_receive": null,
+        "device_id_send": 1,
+        "id": 8,
+        "user_id": 14
+    }
 }
 ```
 
@@ -79,28 +85,34 @@ Send notification from app to the device.
 ```
 ```json
 {
-    "assets": {
-        "url": "{{string}}"
-    },
-    "created": "{{datetime}}",
-    "device_id_receive": "{{int}}",
-    "device_id_send": "{{int}}",
-    "id": "{{int}}",
-    "user_id": "{{int}}"
+    "ok": true,
+    "data": {
+        "assets": {
+            "url": "{{string}}"
+        },
+        "created": "{{datetime}}",
+        "device_id_receive": "{{int}}",
+        "device_id_send": "{{int}}",
+        "id": "{{int}}",
+        "user_id": "{{int}}"
+    }
 }
 ```
 
 **Sample Success Response**
 ```json
 {
-    "assets": {
-        "url": "https://s3.amazonaws.com/rogo-speaker/2644345.mp3-787881af"
-    },
-    "created": "Thu, 25 Jul 2019 04:07:39 GMT",
-    "device_id_receive": 14,
-    "device_id_send": null,
-    "id": 9,
-    "user_id": 14
+    "ok": true,
+    "data": {
+        "assets": {
+            "url": "https://s3.amazonaws.com/rogo-speaker/2644345.mp3-787881af"
+        },
+        "created": "Thu, 25 Jul 2019 04:07:39 GMT",
+        "device_id_receive": null,
+        "device_id_send": 1,
+        "id": 8,
+        "user_id": 14
+    }
 }
 ```
 ## Api read newest notification
@@ -116,27 +128,31 @@ Send notification from app to the device.
     "Authorization": "Bearer {{AccessToken}}",
     "content-type": "multipart/form-data"
 ```
-**URL Params**: `device_id_receive=[integer]`
+**URL Params**: `device_id=[integer]`
 
 **Success Response:**
 ```json
 {
-    "assets": {
-        "url": "https://s3.amazonaws.com/rogo-speaker/2644345.mp3-787881af"
-    },
-    "created": "Thu, 25 Jul 2019 04:07:39 GMT",
-    "device_id_receive": 14,
-    "device_id_send": null,
-    "id": 9,
-    "user_id": 14
+    "ok": true,
+    "data": {
+        "assets": {
+            "url": "https://s3.amazonaws.com/rogo-speaker/2644345.mp3-787881af"
+        },
+        "created": "Thu, 25 Jul 2019 04:07:39 GMT",
+        "device_id_receive": null,
+        "device_id_send": 1,
+        "id": 8,
+        "user_id": 14
+    }
 }
 ```
 **Error Response:**
 
-- Code 404: NOTFOUND do not have any new notification
+- Code 200: NOTFOUND do not have any new notification
 ```json
 {
-    "error": "notification not found"
+    "ok": true,
+    "message": "do not have new notification"
 }
 ```
 - Code 401: UNAUTHORIZED wrong access token
