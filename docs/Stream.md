@@ -23,6 +23,7 @@ Endpoint : ws://api.fpt.io:8080&token={token}&deviceId={deviceId}&userId={userId
 - **token**    : OAuth2 token
 - **deviceId** : id of device upload file
 - **userId**   : id of user
+- **type**     : ="" or not append -> recognize voice to text; = 1 -> upload file
 
 Client stream array of byte data to endpoint, when finish client must send **"EOS"** signal(in bytes) to cloud.
 
