@@ -10,5 +10,7 @@ nav:
   - 'AudioPlayer Interface': 'API Reference/AudioPlayer Interface.md'
   - 'PlaybackController Interface': 'API Reference/PlaybackController Interface.md'
   - 'Alert Interface': 'API Reference/Alert Interface.md'
+  - 'Speaker Interface': 'API Reference/Speaker Interface.md'
   - 'Notification Interface': 'API Reference/Notification Interface.md'
   - 'Configuration Interface': 'API Reference/Configuration Interface.md'
+  - 'Mobile Interface': 'API Reference/Mobile Interface.md'
