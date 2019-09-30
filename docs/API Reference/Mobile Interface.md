@@ -1,6 +1,6 @@
 # Mobile APIs
 
-**Base URL** : `/rest/mobile`
+**Base URL** : `https://api.fpt.io/rest/mobile`
 
 **Header** : `"Authorization": "Bearer {{AccessToken}}"`
 
