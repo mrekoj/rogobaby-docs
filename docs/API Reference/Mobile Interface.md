@@ -30,6 +30,32 @@
 }
 ```
 
+## API pause music
+
+**Path** : `/pause`
+
+**Method** : `POST`
+
+**Auth required** : `YES`
+
+**Request** :
+
+```json
+{
+    "device_id":"{{long}}"
+}
+```
+
+**Response** :
+
+```json
+{
+    "status": "{{int}}",
+    "message":   "{{string}}",
+    "timestamp": "{{string}}",
+}
+```
+
 ## API next music
 
 **Path** : `/next`
