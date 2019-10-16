@@ -21,7 +21,7 @@ Endpoint : ws://api.fpt.io:8080&token={token}&deviceId={deviceId}&userId={userId
 ```
 
 - **token**    : OAuth2 token
-- **deviceId** : id of device upload file
+- **mac** : mac address of device
 - **userId**   : id of user
 - **type**     : ="" or not append -> recognize voice to text; = 1 -> upload file
 
