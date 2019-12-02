@@ -134,3 +134,30 @@
     "timestamp": "{{string}}",
 }
 ```
+
+## API get battery
+
+**Path** : `/battery?device_id={device_id}`
+
+**Method** : `GET`
+
+**Auth required** : `YES`
+
+**Request** : 
+
+Query param :
+```
+    "device_id":"{{long}}"
+```
+**Response** :
+
+```json
+{
+    "status": "{{int}}",
+    "message":   "{{string}}",
+    "timestamp": "{{string}}",
+    "data" : {
+        "value" : "{{INT}}"
+    }
+}
+```
